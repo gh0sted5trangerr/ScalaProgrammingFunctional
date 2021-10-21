@@ -9,4 +9,5 @@ def ggT(first: BigInt, second: BigInt): BigInt =
     ggT(first, second % first)
   else
     -1
-ggT(543437734,78)
+
+ggT(54,78)
