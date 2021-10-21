@@ -1,13 +1,12 @@
 def ggT(first: BigInt, second: BigInt): BigInt =
   if first == 0 then
-    return second
+    second
   else if second == 0 then
-    return first
+    first
   else if first > second then
-    return ggT(first % second, second)
+    ggT(first % second, second)
   else if first < second then
-    return ggT(first, second % first)
-
-  return -1
-
-ggT(54,78)
+    ggT(first, second % first)
+  else
+    -1
+ggT(543437734,78)
