@@ -1,14 +1,3 @@
-/*def istGerade(x: Int) : Boolean =
-  if(x == 0) then true
-  else
-    istUngerade(x-1)
-
-def istUngerade(x: Int) : Boolean =
-  if(x == 0) then false
-  else
-    istGerade(x-1)
-*/
-
 //b
 def pred(x: Int) : Int = x-1
 
@@ -41,3 +30,5 @@ def newton(x: Float, fx1: Float) : Float =
 def root(x: Float) : Float =
     if x==0 then 0
     else newton(x, 1)
+
+root(4)
