@@ -4,6 +4,7 @@ package de.diederich.functional.sheet02
  * The object handles the third task
  */
 object ClassTask3 {
+
   def main(strgs: Array[String]): Unit =
     System.out.println(istUngerade(9))
 
