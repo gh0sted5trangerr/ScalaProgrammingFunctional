@@ -22,13 +22,18 @@ def sumFromTo(a: Int, b: Int) : Int =
 
 //e - ERROR -
 def newton(x: Float, fx1: Float) : Float =
-    if fx1 == 0.0 then 1
-    else
-        val fxi = newton(x, fx1-1)
-        (fxi + x/fxi)/2
+        if fx1 == 0.0 then 1.0
+        else
+                val fxi = newton(x, fx1-1)
+                val fxi1 = (fxi + x/fxi)/2
+                System.out.print(fxi1)
+                if fxi >= fxi1 then fxi
+                else newton(x,fx1+1)
+
 
 def root(x: Float) : Float =
-    if x==0 then 0
-    else newton(x, 1)
+        if x==0 then 0
+        else newton(x, 1)
+
 
 root(4)
