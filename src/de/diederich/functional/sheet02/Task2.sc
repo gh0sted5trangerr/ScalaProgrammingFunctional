@@ -13,4 +13,4 @@ def sumOddN(n: Int) : Int =
     2*sumN(n)-n
 
 sumN(5)
-sumOddN(3)
+sumFromTo(3,100)

@@ -26,7 +26,6 @@ def newton(x: Float, fx1: Float) : Float =
         else
                 val fxi = newton(x, fx1-1)
                 val fxi1 = (fxi + x/fxi)/2
-                System.out.print(fxi1)
                 if fxi >= fxi1 then fxi
                 else newton(x,fx1+1)
 
