@@ -34,4 +34,4 @@ def root(x: Float) : Float =
         else newton(x, 1)
 
 
-root(4)
+root(2)
