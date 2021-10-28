@@ -20,14 +20,13 @@ def sumFromTo(a: Int, b: Int) : Int =
     else
         a + sumFromTo(a+1,b)
 
-//e - ERROR -
+//e
 def newton(x: Float, fx1: Float) : Float =
         if fx1 == 0.0 then 1.0
         else
-                val fxi = newton(x, fx1-1)
-                val fxi1 = (fxi + x/fxi)/2
-                if fxi >= fxi1 then fxi
-                else newton(x,fx1+1)
+          val fxi1 = (fx1+(x/fx1))/2
+          if fx1 == fxi1 then fx1
+          else newton(x, fxi1)
 
 
 def root(x: Float) : Float =
