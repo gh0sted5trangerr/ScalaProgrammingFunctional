@@ -1,22 +1,24 @@
-// b
+// b = richtig
 def NAND(a: Boolean, b: Boolean) : Boolean =
   !(a&&b)
 
-// c
+// c = richtig
 def NOT(a: Boolean) : Boolean =
-  NAND(a, a)
+  NAND(a, true)
 
-// d
+// d = richtig
 def AND(a: Boolean, b: Boolean) : Boolean =
   NOT(NAND(a, b))
 
-// e
+// e  = richtig
 def OR(a: Boolean, b: Boolean) : Boolean =
   NAND(NOT(a), NOT(b))
 
 def NOR(a: Boolean, b: Boolean) : Boolean =
   AND(NOT(a), NOT(b))
 
-// f
+// f = richtig
 def XOR(a: Boolean, b: Boolean) : Boolean =
   NOT(OR(AND(a, b), NOR(a, b)))
+
+XOR(true, false)
