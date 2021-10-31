@@ -6,7 +6,7 @@ package de.diederich.functional.sheet02
 object Sheet02Task3 {
 
   def main(strgs: Array[String]): Unit =
-    System.out.println(root(4))
+    System.out.println(istGerade(3))
 
   def istGerade(x: Int) : Boolean =
     if(x == 0) then true
