@@ -1,16 +1,18 @@
-// a
+// a  = richtig
 def sumN(n: Int) : Int =
-    n*(n+1)/2
+  if(n < 1) then 0
+  else n*(n+1)/2
 
-// b
+// b  = richtig
 def sumFromTo(a: Int, b: Int) : Int =
     if (b < a) 0
     else
         sumN(b)- sumN(a-1)
 
-// c
+// c = richtig
 def sumOddN(n: Int) : Int =
-    2*sumN(n)-n
+  if(n < 0 ) then 1
+  else 2*sumN(n)-n
 
 sumN(5)
-sumFromTo(3,100)
+sumOddN(3)

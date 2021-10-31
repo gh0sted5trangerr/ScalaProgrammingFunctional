@@ -1,4 +1,4 @@
-//b
+//b = richtig
 def pred(x: Int) : Int = x-1
 
 def succ(x: Int) : Int = x+1
@@ -9,18 +9,18 @@ def add(a: Int, b: Int) : Int =
     if (isZero(a)) b
     else add(pred(a), succ(b))
 
-//c
+//c = richtig
 def mul(a: Int, b:Int) : Int =
     if (isZero(a)) 0
-    else b + mul(pred(a), b)
+    else add(b, mul(pred(a), b))
 
-//d
+//d = richtig
 def sumFromTo(a: Int, b: Int) : Int =
     if (a > b) 0
     else
-        a + sumFromTo(a+1,b)
+        a + sumFromTo(succ(a),b)
 
-//e
+//e = richtig
 def newton(x: Float, fx1: Float) : Float =
         if fx1 == 0.0 then 1.0
         else
@@ -32,6 +32,5 @@ def newton(x: Float, fx1: Float) : Float =
 def root(x: Float) : Float =
         if x==0 then 0
         else newton(x, 1)
-
 
 root(2)
