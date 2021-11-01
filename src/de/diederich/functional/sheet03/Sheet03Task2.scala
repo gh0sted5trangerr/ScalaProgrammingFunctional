@@ -3,7 +3,7 @@ package de.diederich.functional.sheet03
 object Sheet03Task2 {
 
   def main(strgs: Array[String]): Unit =
-    b()
+    a()
 
   def a() : Unit = {
     def biKoeff(m: Int, n: Int) : Int = {
