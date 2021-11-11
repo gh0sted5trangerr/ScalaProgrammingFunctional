@@ -7,17 +7,17 @@ object Sheet03Task1 {
 
   def a() : Unit =
     type Kontakt = (String, List[String], List[String])
-    type KontaktListe = (List[Kontakt])
+    type KontaktListe = List[Kontakt]
 
     val liste : KontaktListe = (List(("Günter Schulz", List("günterschulz@gmail.com"), List("016748634"))
     ,("Max Mustermann", List("maxmustermann@outlook.com"), List("014747143"))))
 
   def b() : Unit = {
     type Kontakt = (String, List[String], List[String])
-    type KontaktListe = (List[Kontakt])
+    type KontaktListe = List[Kontakt]
 
     val liste : KontaktListe = (List(("Günter Schulz", List("günterschulz@gmail.com", "günterschulz3@gmail.com", "günter.schulz@gmail.com"), List("016748634"))
-      ,("Max Mustermann", List("maxmustermann@outlook.com", "maxmusterman4n@outlook.com"), List("014747143"))))
+      ,("Max Mustermann", List("maxmustermann@outlook.com", "maxmusterman4n@outlook.com"), List("014747143", "353458924589033"))))
 
     def returnEmailList(neueListe: KontaktListe) : String = {
       def returnEmailKontakts(list : List[Kontakt]) : String =  {
@@ -44,7 +44,7 @@ object Sheet03Task1 {
     type KontaktListe = (List[Kontakt])
 
     val liste : KontaktListe = (List(("Günter Schulz", List("günterschulz@gmail.com", "günterschulz3@gmail.com", "günter.schulz@gmail.com"), List("016748634"))
-      ,("Max Mustermann", List("maxmustermann@outlook.com", "maxmusterman4n@outlook.com"), List("014747143"))))
+      ,("Max Mustermann", List("maxmustermann@outlook.com", "maxmusterman4n@outlook.com"), List("014747143","353458924589033"))))
 
     def findeKontaktName(gtelefonNummer : String, neueListe: List[Kontakt]) : String = {
       if(neueListe.length == 0 ) "Ein Kontakt mit der angegebenen Telefonnummer konte nicht ermittelt werden."
@@ -61,7 +61,7 @@ object Sheet03Task1 {
       }
       durchsucheListe(gtelefonNummer, neueListe)
     }
-    System.out.print(findeKontaktName("014747143",liste))
+    System.out.print(findeKontaktName("353458924589033",liste))
   }
 
 }

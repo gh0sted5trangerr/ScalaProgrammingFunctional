@@ -1,8 +1,10 @@
 package de.diederich.functional.sheet03
 
+import scala.io.Source
+
 object Sheet03Task5 {
   def main(strgs: Array[String]) : Unit =  {
-    c()
+    a()
   }
 
   def a() : Unit = {
@@ -21,14 +23,13 @@ object Sheet03Task5 {
         berechneDreieicke(n-1)+obenNummer+untenNummer
       }
     }
-    System.out.print(berechneDreieicke(5))
+    System.out.print(berechneDreieicke(6))
   }
 
   def c() : Unit = {
     def berechneDreieck(n: Int): Int = {
       if(n == 1) 1
-      else if(n%2 == 0) berechneDreieck(n-1)+(n+1)+(n-1)
-      else berechneDreieck(n-1)+(n+1)+(n-1)
+      else berechneDreieck(n-1)+(n+1)+((n+1)/2)
     }
     System.out.print(berechneDreieck(5))
   }
