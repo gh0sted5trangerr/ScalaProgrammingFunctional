@@ -6,6 +6,7 @@ object Sheet04Task1 {
     println(union(List(1,5,17), List(3,5,18)))
   }
 
+// task 1 a
   def union(a: List[Int], b: List[Int]) : List[Int] = {
     def pUnion(source: List[Int], garbage: List[Int], value: Int) : List[Int] = {
       if(source.isEmpty) garbage:::List(value)
