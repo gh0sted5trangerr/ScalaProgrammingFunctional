@@ -10,5 +10,4 @@ object Sheet05Task1 {
 
   def mult(x: Int) (y:Int) = x*y
 
-
 }
