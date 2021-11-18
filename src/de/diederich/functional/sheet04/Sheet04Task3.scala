@@ -9,7 +9,7 @@ object Sheet04Task3 {
   //task 3 a
   def maxOfList(list: List[Int]) : Int = {
     if(list.isEmpty) 0
-    def maxItterator(currentMax: Int, list: List[Int]): Int = {
+    def maxIterator(currentMax: Int, list: List[Int]): Int = {
       list match {
         case List() => currentMax
         case _ => {
@@ -18,7 +18,7 @@ object Sheet04Task3 {
         }
       }
     }
-    maxItterator(0, list)
+    maxIterator(0, list)
   }
 
   //task 3 b

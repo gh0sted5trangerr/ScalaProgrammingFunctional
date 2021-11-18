@@ -3,7 +3,7 @@ package de.diederich.functional.sheet04
 object Sheet04Task2 {
 
   def main(args: Array[String]) : Unit = {
-    guessNumberGamePC()
+    guessNumberGame()
   }
 
   //task 2 a
