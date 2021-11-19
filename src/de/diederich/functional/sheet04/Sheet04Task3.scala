@@ -13,8 +13,8 @@ object Sheet04Task3 {
       list match {
         case List() => currentMax
         case _ => {
-          if (list.head > currentMax) maxItterator(list.head, list.tail)
-          else maxItterator(currentMax, list.tail)
+          if (list.head > currentMax) maxIterator(list.head, list.tail)
+          else maxIterator(currentMax, list.tail)
         }
       }
     }
