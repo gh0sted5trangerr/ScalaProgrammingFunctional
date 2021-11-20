@@ -70,5 +70,3 @@ object Sheet05Task2 {
   }
 
 }
-
-

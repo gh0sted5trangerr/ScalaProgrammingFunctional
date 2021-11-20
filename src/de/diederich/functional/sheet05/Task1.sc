@@ -1,8 +1,8 @@
 def curryZweistellligInt(f: (Int, Int) => Int) : Int => (Int => Int) = {
   def curry(x: Int): Int => Int = {
-    (y:Int) => f(x,y)
+    f(x,_)
   }
-  curry
+  curry(_)
 }
 
 def unCurryZweistelligInt(f: Int => (Int => Int)) : (Int,Int) => Int = {
@@ -21,5 +21,6 @@ val l: List[Int] = List(1,2,3,4,5)
 val l2 : List[Int] = modifyList(l, _+5)
 
 def test = curryZweistellligInt((_+_))
-val hallo = test(5)_
+val hallo = test(5)
+hallo(6)
 def untest = unCurryZweistelligInt(test)
