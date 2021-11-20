@@ -1,4 +1,5 @@
 //C
+//TADA
 type Kassenzetteleintrag = (Int, String, Double)
 type Kassenzettel = List[Kassenzetteleintrag]
 val z1 : Kassenzettel = List ((50,"Benzin",1.37),(2,"Scheibenwischer",5.00),(1,"Autowaesche",10.00),(1,"Kaugummi",0.99))
