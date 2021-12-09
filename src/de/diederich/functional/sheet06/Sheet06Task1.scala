@@ -12,7 +12,6 @@ object Sheet06Task1 {
     println("Liste + 5: "+map[Int, Int](list)(_+5))
     println("Integerliste zu Stringliste: "+intListToStringList(list))
     println("Ausgangskassenzettel: "+ z1)
-    println("Erhöhter zettel: "+ increaseAmountOfProducts(z1))
   }
 
   /**
@@ -30,13 +29,6 @@ object Sheet06Task1 {
   def intListToStringList(list: List[Int]) : List[String] = {
     list.map(x => x.toString).toList
   }
-  /**
-   * @title Task 1 c
-   */
-  def increaseAmountOfProducts(zettel: Kassenzettel) : Kassenzettel = {
-    zettel.map(x => (x._1+1,x._2, x._3)).toList
-  }
-
 
 
 }
